@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Task 6</title>
+	</head>
+	<body>
+		<script>
+// З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+
+const firstProductPrice = parseFloat(prompt('Введіть вартість першого товару', ''))
+const firstProductQuantity = parseInt(prompt('Введіть кількість одиниць першого товару', ''))
+const secondProductPrice = parseFloat(prompt('Введіть вартість другого товару', ''))
+const secondProductQuantity = parseInt(prompt('Введіть кількість одиниць другого товару', ''))
+const thirdProductPrice = parseFloat(prompt('Введіть вартість третього товару', ''))
+const thirdProductQuantity = parseInt(prompt('Введіть кількість одиниць третього товару', ''))
+
+let	firstProductSummaryPrice = firstProductPrice * firstProductQuantity
+let	secondProductSummaryPrice = secondProductPrice * secondProductQuantity
+let	thirdProductSummaryPrice = thirdProductPrice * thirdProductQuantity
+let	summaryPrice = firstProductSummaryPrice + secondProductSummaryPrice + thirdProductSummaryPrice
+
+document.write(
+	`
+	<div style="max-width: 200px;">
+    <h2>Товарний чек</h2>	
+	<div style="display: flex;justify-content: space-between;">
+        <p>Товар №1 - ${firstProductPrice} x${firstProductQuantity}</p> <p><b>${firstProductSummaryPrice}</b></p>
+    </div>   
+	<div style="display: flex;justify-content: space-between;">
+        <p>Товар №2 - ${secondProductPrice} x${secondProductQuantity}</p> <p><b>${secondProductSummaryPrice}</b></p>
+    </div>   
+	<div style="display: flex;justify-content: space-between;">
+        <p>Товар №3 - ${thirdProductPrice} x${thirdProductQuantity}</p> <p><b>${thirdProductSummaryPrice}</b></p>
+    </div>   
+    <h3>Сума ${summaryPrice.toFixed(2)}</h3>
+	</div>
+
+	`
+) 
+	</script>
+	</body>
+</html>

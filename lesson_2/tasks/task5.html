@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Task 5</title>
+	</head>
+	<body>
+		<script>
+
+// Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.
+const currentDate = new Date()
+
+let secondsFromDayBegining = currentDate.getHours() * 3600 + currentDate.getMinutes() * 60 + currentDate.getSeconds()
+let hoursFromDayBegining = Math.floor(secondsFromDayBegining / 3600)
+let minutesFromDayBegining = Math.floor(secondsFromDayBegining / 60)
+let minutesFromHours = minutesFromDayBegining % 60
+
+document.write(
+	`
+		Від початку доби пройшло ${secondsFromDayBegining} секунд, або ${hoursFromDayBegining} годин і ${minutesFromHours} хвилин
+	`
+)
+	</script>
+	</body>
+</html>
