@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Task 5</title>
+	</head>
+	<body>
+		<script>
+
+//Задача 5.  З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+
+const firstCategory = "A"
+const secondCategory = "B"
+const thirdCategory = "C"
+
+let userCategory = prompt('Введіть назву категорії')
+userCategory = userCategory.toUpperCase()
+
+if(userCategory === firstCategory)
+	document.write('Ви можете керувати мотоциклом')
+else if (userCategory === secondCategory)
+	document.write('Ви можете керувати легковим автомобілем')
+else if (userCategory === thirdCategory)
+	document.write('Ви можете керувати вантажним автомобілем')
+else 
+	document.write('Транспорту для цієї категорії немає')
+	
+
+	</script>
+	</body>
+</html>

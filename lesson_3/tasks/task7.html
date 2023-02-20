@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Task 7</title>
+	</head>
+	<body>
+		<script>
+
+// Задача 7. З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься
+
+const monthNumber = parseInt(prompt('Введіть номер місяця', ''))
+
+if ((monthNumber > 2) && (monthNumber <= 5 ))
+	document.write('Весна')
+else if ((monthNumber > 5) && (monthNumber <= 8))
+	document.write('Літо')
+else if ((monthNumber > 5) && (monthNumber <= 8))
+	document.write('Літо')
+else if ((monthNumber > 8) && (monthNumber <= 11))
+	document.write('Осінь')
+else if (((monthNumber > 0) && (monthNumber <= 2)) || (monthNumber === 12))
+	document.write('Зима')
+else
+	document.write('Такого місяця немає')
+
+	</script>
+	</body>
+</html>
